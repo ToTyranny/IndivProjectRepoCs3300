@@ -9,7 +9,6 @@ gem 'rails', '~> 6.1.3', '>= 6.1.3.1'
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 5.1.0'
-gem 'postgresql'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 5.0'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -30,7 +29,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 gem 'mini_racer'
 
 group :production do
-  gem 'pg', '~> 0.21' # for Heroku deployment
+  gem 'pg'
   gem 'rails_12factor'
 end
 
