@@ -26,8 +26,12 @@ gem 'jbuilder', '~> 2.7'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
-
 gem 'mini_racer'
+
+group :production do
+  gem 'pg', '~> 0.21' # for Heroku deployment
+  gem 'rails_12factor'
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -46,8 +50,7 @@ group :development do
   gem 'listen', '~> 3.3'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-  gem 'pg', '~> 0.21'
-  gem 'postgresql'
+  
   gem 'rails_12factor'
 end
 
