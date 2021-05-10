@@ -27,18 +27,17 @@ gem 'jbuilder', '~> 2.7'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
+gem 'mini_racer'
 
 group :production do
   gem 'pg', '~> 0.21'
   gem 'rails_12factor'
 end
 
-gem 'mini_racer'
-
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'rspec-rails', '~> 4.0.1'
+  gem 'rspec-rails', '~> 3.7'
   gem 'capybara'
   gem 'sqlite3'
 end
